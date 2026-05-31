@@ -1,0 +1,152 @@
+.signup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
+  backdrop-filter: blur(5px);
+}
+
+.signup-box {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-box h1 {
+  color: #1f2937;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.signup-box > p {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.signUp-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.signUp-form label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: -4px;
+}
+
+.signUp-form input[type="text"],
+.signUp-form input[type="email"],
+.signUp-form input[type="password"] {
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.signUp-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.checkbox label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+.signUp-form button {
+  margin-top: 15px;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signUp-form button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.signUp-form p {
+  text-align: center;
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+.signUp-form a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signUp-form a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode styles for the signup box */
+body.dark-mode .signup-box {
+  background: #1e293b;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .signup-box h1 {
+  color: #f8fafc;
+}
+
+body.dark-mode .signup-box > p {
+  color: #94a3b8;
+}
+
+body.dark-mode .signUp-form label,
+body.dark-mode .checkbox label {
+  color: #cbd5e1;
+}
+
+body.dark-mode .signUp-form input[type="text"],
+body.dark-mode .signUp-form input[type="email"],
+body.dark-mode .signUp-form input[type="password"] {
+  background: #0f172a;
+  border-color: #475569;
+  color: #f8fafc;
+}
+
+body.dark-mode .signUp-form p {
+  color: #94a3b8;
+}
